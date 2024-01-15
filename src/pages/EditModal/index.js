@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
-import { Input, Modal, Popconfirm } from 'antd';
-import { TodoContext } from '../TodoSearch';
+import { Input, Modal } from 'antd';
+import { contentContext } from '../assets/Context';
 
 const EditModal = () => {
+    // Extraer valores del contexto
     const {
         editedTask,
         setEditedTask,
@@ -10,13 +11,14 @@ const EditModal = () => {
         confirmEditTask,
         isModalVisible,
         handleCancel
-    } = useContext(TodoContext);
+    } = useContext(contentContext);
 
     return (
         <>
+            {/* Modal para editar tareas */}
             <Modal
                 title="Editar Tarea"
-                visible={isModalVisible}
+                open={isModalVisible}
                 onOk={() => {
                     confirmEditTask(editedTaskIndex);
                     handleCancel();

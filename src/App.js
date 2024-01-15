@@ -1,15 +1,16 @@
-// App.js
 import React from 'react';
 import './App.css';
-import TodoButton from './pages/TodoButton';
+import { ContextProvider } from './pages/assets/Context';
 import { TodoSearch } from './pages/TodoSearch';
 
 function App() {
   return (
     <div className="App">
-      <TodoSearch>
-        <TodoButton />
-      </TodoSearch>
+      {/* Provee el contexto a la aplicación */}
+      <ContextProvider>
+        {/* Componente principal de búsqueda y visualización de tareas */}
+        <TodoSearch />
+      </ContextProvider>
     </div>
   );
 }
