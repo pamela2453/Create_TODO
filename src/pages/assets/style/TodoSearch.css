@@ -1,10 +1,8 @@
 body {
-  /* background-image: url("https://i.pinimg.com/originals/d9/20/66/d920664409123e8c2731c3a9ed214a85.jpg");
+  background-image: url("../img//taks.png");
   background-size: calc(104%);
-  background-repeat: no-repeat; */
-  background-color: #8bc6ec;
-  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
-}
+  background-repeat: no-repeat;
+};
 
 .TodoSearch {
   background: #f9fbfc;
@@ -27,14 +25,14 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-content: center;
+};
 
 .TodoSearch::placeholder {
   color: #966464;
   font-family: "Montserrat";
   font-weight: 400;
-}
+};
 
 .TodoSearch:focus {
   outline-color: #d6abb1;
@@ -48,10 +46,14 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Otros estilos que puedas necesitar */
+};
 
 .color {
   color: #ddd;
+} 
+
+.textcolor {
+  color: #1e1e1f;
 }
+
+/* Otros estilos que puedas necesitar */
