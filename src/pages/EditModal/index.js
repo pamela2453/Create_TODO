@@ -26,8 +26,8 @@ const EditModal = () => {
                 onCancel={handleCancel}
             >
                 <Input
-                    value={editedTask}
-                    onChange={(e) => setEditedTask(e.target.value)}
+                    value={editedTask.text}
+                    onChange={(e) => setEditedTask({ ...editedTask, text: e.target.value })}
                 />
             </Modal>
         </>
