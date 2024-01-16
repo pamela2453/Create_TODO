@@ -18,7 +18,7 @@ const TodoSearch = () => {
 
     return (
         <div className="todo-container">
-            <h1>Lista de Tareas</h1>
+            <h1 className='textcolor'>Lista de Tareas</h1>
             {/* Input para agregar nuevas tareas */}
             <Input
                 placeholder="Nueva tarea"
