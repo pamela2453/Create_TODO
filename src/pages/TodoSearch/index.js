@@ -45,7 +45,7 @@ const TodoSearch = () => {
                             </Popconfirm>,
                         ]}
                     >
-                        {item}
+                        {item.text}
                     </List.Item>
                 )}
             />

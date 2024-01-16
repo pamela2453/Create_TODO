@@ -17,7 +17,7 @@ const ContextProvider = ({ children }) => {
     // Función para agregar una nueva tarea
     const addTask = () => {
         if (task.trim() !== '') {
-            const newTasks = [...tasks, task]
+            const newTasks = [...tasks, { text: task }]; // Asegúrate de que estás agregando un objeto con la propiedad text
             setTasks(newTasks);
             setTask('');
             localStorage.setItem('tasks', JSON.stringify(newTasks));
